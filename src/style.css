@@ -1,3 +1,13 @@
 body {
   background-color: green;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+}
+.cardBody {
+  margin: 10vh auto;
+  background-color: white;
+  width: 30vh;
+  height: 50vh;
 }
