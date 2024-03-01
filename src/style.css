@@ -1,13 +1,84 @@
 body {
   background-color: green;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 .cardBody {
-  margin: 10vh auto;
+  position: relative;
   background-color: white;
-  width: 30vh;
-  height: 50vh;
+  width: 50vh;
+  height: 70vh;
+  border-radius: 4vh;
+  box-shadow: 2vh 2vh 3vh rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-width: 0.22vh;
+  border-top-color: lightgray;
+  border-right-color: slategray;
+  border-bottom-color: slategray;
+  border-left-color: lightgray;
+}
+.topLeft {
+  position: absolute;
+  margin: 0;
+  top: -2.5vh;
+  left: 2.5vh;
+}
+
+.bottomRight {
+  position: absolute;
+  margin: 0;
+  bottom: -1.5vh;
+  right: 2.5vh;
+}
+
+.cardNumber {
+  font-size: 20vh;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-size: 18vh;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 5vh;
+  right: 5vh;
+}
+
+button {
+  margin-right: 2vh;
+  padding: 1vh;
+  background-color: lightblue;
+  border-radius: 1vh;
+  border-top-color: lightsteelblue;
+  border-right-color: cadetblue;
+  border-bottom-color: cadetblue;
+  border-left-color: lightsteelblue;
+}
+
+button:hover {
+  background-color: deepskyblue;
+  border-top-color: darkslategray;
+  border-right-color: darkcyan;
+  border-bottom-color: darkcyan;
+  border-left-color: darkslategray;
+}
+
+button:active {
+  background-color: dodgerblue;
+  border-top-color: midnightblue;
+  border-right-color: teal;
+  border-bottom-color: teal;
+  border-left-color: midnightblue;
+}
+
+.isRed {
+  color: red;
 }
